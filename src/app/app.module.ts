@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import { HeadBarComponent } from './head-bar/head-bar.component';
+import { HeadBarModule } from './head-bar/head-bar.module';
+import { MessagePanelComponent } from './message-panel/message-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // HeadBarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeadBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
